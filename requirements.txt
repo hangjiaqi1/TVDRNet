@@ -5,7 +5,7 @@
 torch==2.5.1
 torchvision
 
-# 3D deep learning (must be built from source)
+# 3D deep learning (built from source)
 # Install with: pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 # pytorch3d==0.7.8
 
