@@ -59,6 +59,7 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 **How it works:** The system uses differentiable rendering to compute gradients with respect to camera parameters. Through iterative optimization (typically 50-200 iterations), it automatically finds the optimal camera position by minimizing the difference between rendered and target images. This demonstrates the power of differentiable rendering for inverse graphics problems.
 ![image](https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg)
 
+<img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg" width="180" height="105"><img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg"  width="180" height="105"><img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg"  width="180" height="105"/>
 
 
 
