@@ -12,6 +12,42 @@
 ## 📖 What is TVDRNet?
 
 The TVDRNet employs textual instructions as a supervisory signal, utilizing a differentiable renderer (a rendering system that allows gradients to flow through the rendering process, enabling end-to-end optimization of camera parameters) to guide the system to observe the 3D scene from optimal viewpoints dictated by the text's meaning. This work proposes a 3D learning paradigm that computationally determines the informative 2D virtual viewpoints for rendering, in turn building a complete 3D perception that alleviates the challenge of Erroneous localization and Boundary ambiguity in 3D Reasoning Segmentation. 
+
+## 🗓️ Open Source Schedule
+
+### Phase 1: Visualization Module ✅ (Released)
+
+**Status**: Complete and available now
+
+**Includes**:
+- High-quality Phong rendering (`color_render.py`)
+- PLY file loading with vertex colors (`mesh_loader.py`)
+- Three rendering modes (single, turntable, grid)
+- Complete documentation
+- Example 3D scene
+- Tested on PyTorch 2.5.1 + PyTorch3D 0.7.8
+
+**What you can do**:
+- Visualize 3D models with original colors
+- Generate presentations and documentation
+- Experiment with camera angles and lighting
+- Create animations and multi-view grids
+
+### Phase 2: Complete Evaluting Pipeline 🚧 
+
+**Status**: coming soon
+
+
+
+### Phase 3: Complete Training Pipeline 📋
+
+**Status**: coming soon
+
+
+
+
+
+
 ### 🎯 Core Functionality
 
 **Camera Parameter Optimization** - The heart of this project enables automatic adjustment of three critical camera parameters:
@@ -552,86 +588,3 @@ Given a target image, automatically find the best camera angle that reproduces t
 - Extended format support (STL, OFF, OBJ)
 
 ---
-
-## ❓ FAQ
-
-**Q: Why is the output all white?**  
-A: Your PLY file may not contain vertex colors. Try: `--color 0.3 0.7 1.0`
-
-**Q: Can I use my own PLY files?**  
-A: Yes! Just specify: `--mesh /path/to/your/model.ply`
-
-**Q: How do I change the view angle?**  
-A: Use: `--distance 6.0 --elevation 45.0 --azimuth 60.0`
-
-**Q: The rendering is slow. How to speed up?**  
-A: Reduce resolution: `--image-size 256` or frames: `--num-views 12`
-
-**Q: Out of GPU memory?**  
-A: Use smaller images: `--image-size 256` or run on CPU (automatic fallback)
-
-**Q: How to change lighting?**  
-A: Use: `--light-pos 0.0 5.0 5.0` for top lighting
-
-**Q: Can I batch process multiple files?**  
-A: Yes, use a shell script:
-```bash
-for file in *.ply; do
-    python color_render.py --mesh "$file" --mode all --output-dir "renders_${file%.ply}"
-done
-```
-
-**Q: What's the difference between modes?**  
-A: 
-- `single`: One image from one angle
-- `turntable`: Animated 360° rotation
-- `grid`: 32 images from different angles
-- `all`: All of the above
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! The camera optimization module will be released as open source in Q1 2025. Stay tuned for:
-
-- Camera parameter optimization code
-- Training examples
-- Additional tutorials
-- Community contributions
-
----
-
-## 📄 License
-
-To be announced upon full release of the camera optimization module.
-
----
-
-## 🙏 Acknowledgments
-
-This project builds upon excellent open-source work:
-
-- [PyTorch](https://pytorch.org/) - Deep learning framework
-- [PyTorch3D](https://pytorch3d.org/) - 3D computer vision library  
-- The differentiable rendering research community
-
----
-
-## 📧 Contact
-
-For questions and feedback, please open an issue in the repository (coming soon with Phase 2 release).
-
----
-
-**Version**: 1.0 (Visualization Module)  
-**Status**: ✅ Production Ready  
-**Last Updated**: October 28, 2025  
-**Coming Soon**: Camera optimization module (Q1 2025)
-
----
-
-**Quick Start**: `python color_render.py --mode all`  
-**Documentation**: This README  
-**Examples**: See usage section above  
-**Installation**: See environment setup section  
-**Source Code**: `color_render.py`, `mesh_loader.py`
