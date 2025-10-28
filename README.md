@@ -1,11 +1,11 @@
-# TVDRNet: Differentiable Rendering Visualization Tool
+# TVDRNet: Text-driven Viewpoint Optimization via Differentiable Rendering for 3D Reasoning Segmentation
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-orange)
 ![PyTorch3D](https://img.shields.io/badge/PyTorch3D-0.7.8-green)
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-brightgreen)
 
-**A high-quality visualization and optimization tool for differentiable rendering of 3D scenes.**
+**An active vision paradigm for 3D reasoning segmentation**
 
 ---
 
