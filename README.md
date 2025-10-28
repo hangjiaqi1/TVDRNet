@@ -15,7 +15,7 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 
 ## 🗓️ Open Source Schedule
 
-### Phase 1: Visualization Module ✅ (Released)
+### Phase 1: Adaptive Viewpoint Position Learning ✅ (Released)
 
 **Status**: Complete and available now
 
@@ -48,9 +48,9 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 
 
 
-### 🎯 Core Functionality
+### 🎯 Adaptive Viewpoint Position Learning Functionality
 
-**Camera Parameter Optimization** - The heart of this project enables automatic adjustment of three critical camera parameters:
+**Rendering Camera Parameter Optimization** - The key of Adaptive Viewpoint Position Learning (AVPL) enables automatic adjustment of camera parameters:
 
 - **Distance** (`--distance`): Controls how far the camera is from the scene origin
 - **Elevation** (`--elevation`): Controls the vertical angle (0° = eye level, 90° = top-down view)
@@ -72,11 +72,6 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
    Y (forward)
 ```
 
-- **Distance**: Distance from origin along viewing direction
-- **Elevation**: Vertical angle (pitch)
-- **Azimuth**: Horizontal angle (yaw)
-
----
 
 ### 🎨 Visualization Module (Current Release)
 
