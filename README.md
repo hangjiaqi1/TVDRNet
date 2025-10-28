@@ -134,43 +134,10 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start
 
-### Basic Usage
+### Optimizing the camera rendering parameters
 
 ```bash
 # Single view rendering with original colors
-python color_render.py --mode single
-
-# 360° turntable animation (36 frames)
-python color_render.py --mode turntable
-
-# Multi-view grid (4 elevations × 8 azimuths = 32 views)
-python color_render.py --mode grid
-
-# Generate all outputs
-python color_render.py --mode all
+python color_render.py --mode optimize --initial-distance 6.0 --initial-elevation 45.0 --initial-azimuth 90.0 --iterations 120 --image-size 256
 ```
 
-### Advanced Usage
-
-```bash
-# High-resolution rendering (1024×1024)
-python color_render.py --mode single --image-size 1024
-
-# Custom camera parameters
-python color_render.py \
-    --mode single \
-    --distance 6.0 \
-    --elevation 45.0 \
-    --azimuth 60.0
-
-# Custom lighting position
-python color_render.py --mode single --light-pos 0.0 5.0 5.0
-
-# Override vertex colors (e.g., red model)
-python color_render.py --mode single --color 1.0 0.3 0.3
-
-# Smooth animation with more frames
-python color_render.py --mode turntable --num-views 72
-```
-
----
