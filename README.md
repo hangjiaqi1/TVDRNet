@@ -11,8 +11,7 @@
 
 ## 📖 What is TVDRNet?
 
-TVDRNet is a **differentiable rendering** demonstration project that showcases camera parameter optimization through gradient-based methods. This repository contains the core implementation with two main components:
-
+The TVDRNet employs textual instructions as a supervisory signal, utilizing a differentiable renderer (a rendering system that allows gradients to flow through the rendering process, enabling end-to-end optimization of camera parameters) to guide the system to observe the 3D scene from optimal viewpoints dictated by the text's meaning. This work proposes a 3D learning paradigm that computationally determines the informative 2D virtual viewpoints for rendering, in turn building a complete 3D perception that alleviates the challenge of Erroneous localization and Boundary ambiguity in 3D Reasoning Segmentation. 
 ### 🎯 Core Functionality
 
 **Camera Parameter Optimization** - The heart of this project enables automatic adjustment of three critical camera parameters:
