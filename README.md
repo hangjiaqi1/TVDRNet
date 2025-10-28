@@ -23,6 +23,26 @@ TVDRNet is a **differentiable rendering** demonstration project that showcases c
 
 **How it works:** The system uses differentiable rendering to compute gradients with respect to camera parameters. Through iterative optimization (typically 50-200 iterations), it automatically finds the optimal camera position by minimizing the difference between rendered and target images. This demonstrates the power of differentiable rendering for inverse graphics problems.
 
+```
+        Z (up)
+        ↑
+        |    
+        |   📷 Camera
+        |  /
+        | /
+        |/________→ X (right)
+       /
+      /
+     ↙
+   Y (forward)
+```
+
+- **Distance**: Distance from origin along viewing direction
+- **Elevation**: Vertical angle (pitch)
+- **Azimuth**: Horizontal angle (yaw)
+
+---
+
 ### 🎨 Visualization Module (Current Release)
 
 The visualization component (`color_render.py`) provides high-quality rendering capabilities:
@@ -415,27 +435,8 @@ The system automatically detects and loads RGB vertex colors from PLY files:
 
 If no vertex colors exist, falls back to white or uses `--color` override.
 
-### Camera Coordinate System
 
-```
-        Z (up)
-        ↑
-        |    
-        |   📷 Camera
-        |  /
-        | /
-        |/________→ X (right)
-       /
-      /
-     ↙
-   Y (forward)
-```
 
-- **Distance**: Distance from origin along viewing direction
-- **Elevation**: Vertical angle (pitch)
-- **Azimuth**: Horizontal angle (yaw)
-
----
 
 ## 📁 Project Structure
 
