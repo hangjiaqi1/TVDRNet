@@ -57,7 +57,6 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 - **Azimuth** (`--azimuth`): Controls the horizontal rotation around the scene (0° to 360°)
 
 **How it works:** The system uses differentiable rendering to compute gradients with respect to camera parameters. Through iterative optimization (typically 50-200 iterations), it automatically finds the optimal camera position by minimizing the difference between rendered and target images. This demonstrates the power of differentiable rendering for inverse graphics problems.
-![image](https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg)
 
 <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg"><img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg"><img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/avpl.jpg"/>
 
