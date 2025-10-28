@@ -73,61 +73,6 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 ```
 
 
-### 🎨 Visualization Module (Current Release)
-
-The visualization component (`color_render.py`) provides high-quality rendering capabilities:
-
-- **Original Vertex Colors**: Automatically loads and preserves vertex colors from PLY files
-- **Phong Shading**: Realistic lighting with ambient (50%), diffuse (80%), and specular (30%) components
-- **Multiple Modes**: Single view, 360° turntable animations, and multi-angle grids
-- **GPU Acceleration**: CUDA-enabled for real-time rendering on NVIDIA GPUs
-- **Flexible Control**: Full control over camera position, lighting, and output resolution
-
----
-
-## 🚀 Quick Start
-
-### Basic Usage
-
-```bash
-# Single view rendering with original colors
-python color_render.py --mode single
-
-# 360° turntable animation (36 frames)
-python color_render.py --mode turntable
-
-# Multi-view grid (4 elevations × 8 azimuths = 32 views)
-python color_render.py --mode grid
-
-# Generate all outputs
-python color_render.py --mode all
-```
-
-### Advanced Usage
-
-```bash
-# High-resolution rendering (1024×1024)
-python color_render.py --mode single --image-size 1024
-
-# Custom camera parameters
-python color_render.py \
-    --mode single \
-    --distance 6.0 \
-    --elevation 45.0 \
-    --azimuth 60.0
-
-# Custom lighting position
-python color_render.py --mode single --light-pos 0.0 5.0 5.0
-
-# Override vertex colors (e.g., red model)
-python color_render.py --mode single --color 1.0 0.3 0.3
-
-# Smooth animation with more frames
-python color_render.py --mode turntable --num-views 72
-```
-
----
-
 ## 🛠️ Environment Setup
 
 ### System Requirements
@@ -227,55 +172,66 @@ Or use the requirements file:
 pip install -r requirements.txt
 ```
 
-**Complete dependency list:**
-- `torch==2.5.1` - Deep learning framework
-- `pytorch3d==0.7.8` - 3D deep learning library
-- `numpy` - Numerical computing
-- `matplotlib` - Visualization
-- `imageio` - Image/GIF I/O
-- `scikit-image` - Image processing
-- `tqdm` - Progress bars
-- `plyfile` - PLY file reading
 
-#### Step 5: Verify Installation
 
-Run a quick test:
 
-```bash
-python color_render.py --mode single --image-size 256
-```
 
-**Expected output:**
+### 🎨 Visualization Module (Current Release)
 
-```
-✓ Loaded original vertex colors from PLY file
-✓ 彩色渲染器初始化完成
-  设备: cuda:0
-  图像大小: 256x256
-✓ 单视角图像已保存: color_renders/single_view.png
-✓ 完成!
-```
+The visualization component (`color_render.py`) provides high-quality rendering capabilities:
 
-**Total installation time**: ~20-25 minutes
-
-### Troubleshooting
-
-**Issue 1: CUDA not available**
-- Check GPU drivers: `nvidia-smi`
-- Verify CUDA installation: `nvcc --version`
-- Code will run on CPU if CUDA unavailable (slower)
-
-**Issue 2: PyTorch3D build fails**
-- Install build tools: `sudo apt install build-essential`
-- Check CUDA version matches
-- Try with verbose output: `pip install -v "git+..."`
-
-**Issue 3: Out of memory**
-- Reduce image size: `--image-size 256`
-- Reduce animation frames: `--num-views 12`
-- Close other GPU applications
+- **Original Vertex Colors**: Automatically loads and preserves vertex colors from PLY files
+- **Phong Shading**: Realistic lighting with ambient (50%), diffuse (80%), and specular (30%) components
+- **Multiple Modes**: Single view, 360° turntable animations, and multi-angle grids
+- **GPU Acceleration**: CUDA-enabled for real-time rendering on NVIDIA GPUs
+- **Flexible Control**: Full control over camera position, lighting, and output resolution
 
 ---
+
+## 🚀 Quick Start
+
+### Basic Usage
+
+```bash
+# Single view rendering with original colors
+python color_render.py --mode single
+
+# 360° turntable animation (36 frames)
+python color_render.py --mode turntable
+
+# Multi-view grid (4 elevations × 8 azimuths = 32 views)
+python color_render.py --mode grid
+
+# Generate all outputs
+python color_render.py --mode all
+```
+
+### Advanced Usage
+
+```bash
+# High-resolution rendering (1024×1024)
+python color_render.py --mode single --image-size 1024
+
+# Custom camera parameters
+python color_render.py \
+    --mode single \
+    --distance 6.0 \
+    --elevation 45.0 \
+    --azimuth 60.0
+
+# Custom lighting position
+python color_render.py --mode single --light-pos 0.0 5.0 5.0
+
+# Override vertex colors (e.g., red model)
+python color_render.py --mode single --color 1.0 0.3 0.3
+
+# Smooth animation with more frames
+python color_render.py --mode turntable --num-views 72
+```
+
+---
+
+
 
 ## 📋 Command-Line Reference
 
