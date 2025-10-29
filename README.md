@@ -129,7 +129,7 @@ pip install -r requirements.txt
 # optimizing elevation\azimuth\azimuth
 python color_render.py --mode optimize --initial-distance 6.0 --initial-elevation 45.0 --initial-azimuth 90.0 --iterations 120 --image-size 256
 
-python color_render.py --mode optimize --initial-distance 15.0 --initial-elevation 20.0 --initial-azimuth 30.0 --iterations 256 --image-size 512 --mesh "scene0015_00_vh_clean_2.ply"
+python color_render.py --mode optimize --initial-distance 15.0 --initial-elevation 38.0 --initial-azimuth 38.0 --iterations 256 --image-size 512 --mesh "scene0015_00_vh_clean_2.ply"
 ```
 The visualization of rendering viewpoints optimization can be found in the folder /TVDRNet_clean/color_renders.
 
