@@ -6,10 +6,9 @@
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-brightgreen)
 
 **An active vision paradigm for 3D reasoning segmentation**
-<div align="center">
-  <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/share-1.gif" width="49%" />
-  <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/share-2.gif" width="49%" />
-</div>
+
+| ![share-1](https://github.com/hangjiaqi1/TVDRNet/blob/main/share-1.gif?raw=true) | ![share-2](https://github.com/hangjiaqi1/TVDRNet/blob/main/share-2.gif?raw=true) |
+| :---: | :---: |
 ---
 
 ## 📖 What is TVDRNet?
