@@ -13,7 +13,7 @@
   </tr>
 </table>
 
-**As illustrated in the figure, within TVDRNet, the parameters of the rendering camera undergo iterative optimization through the backpropagation of the loss gradient. This enables data-driven, adaptive convergence towards the optimal observation viewpoint**
+**As illustrated in the figure, within TVDRNet, the parameters of the rendering camera（detailed in the Figure. D Focal Distance; E Elevation Angle; A azimuth Angle） undergo iterative optimization through the backpropagation of the loss gradient. This enables data-driven, adaptive convergence towards the optimal observation viewpoint**
 
 ---
 
