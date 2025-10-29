@@ -20,20 +20,16 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 **Status**: Complete and available now
 
 **Includes**:
-- High-quality Phong rendering (`color_render.py`)
+- High-quality differentiable rendering (`color_render.py`)
 - PLY file loading with vertex colors (`mesh_loader.py`)
 - Three rendering modes (single, turntable, grid)
-- Complete documentation
 - Example 3D scene
 - Tested on PyTorch 2.5.1 + PyTorch3D 0.7.8
 
 **What you can do**:
-- Visualize 3D models with original colors
-- Generate presentations and documentation
-- Experiment with camera angles and lighting
-- Create animations and multi-view grids
-
-### Phase 2: Complete Evaluting Pipeline 🚧 
+- Validating the TVDRNet's key design, including the optimization of the rendering camera intrinsic (e.g., focal length) and extrinsic (e.g., azimuth, elevation) parameters.
+  
+### Phase 2: Complete Evaluating Pipeline 🚧 
 
 **Status**: coming soon
 
