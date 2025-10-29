@@ -102,10 +102,6 @@ pip install fvcore iopath
 ```bash
 pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 ```
-<div align="center">
-  <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/share-1.gif" width="49%" />
-  <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/share-2.gif" width="49%" />
-</div>
 
 #### Step 4: Install Additional Dependencies
 
