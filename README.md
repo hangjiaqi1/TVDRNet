@@ -7,8 +7,10 @@
 
 **An active vision paradigm for 3D reasoning segmentation**
 
-| ![share-1](https://github.com/hangjiaqi1/TVDRNet/blob/main/share-1.gif?raw=true) | ![share-2](https://github.com/hangjiaqi1/TVDRNet/blob/main/share-2.gif?raw=true) |
-| :---: | :---: |
+<p align="center">
+  <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/share-1.gif?raw=true" width="49%">
+  <img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/share-2.gif?raw=true" width="49%">
+</p>
 ---
 
 ## 📖 What is TVDRNet?
