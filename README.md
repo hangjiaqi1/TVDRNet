@@ -12,6 +12,8 @@
     <td align="center"><img src="https://github.com/hangjiaqi1/TVDRNet/blob/main/merged_output.gif" ></td>
   </tr>
 </table>
+
+**As illustrated in the figure, within TVDRNet's rendering pipeline, the parameters of the rendering camera undergo iterative optimisation through backpropagation of the model loss gradient. This enables data-driven, adaptive convergence towards the optimal observation viewpoint.**
 ---
 
 ## 📖 What is TVDRNet?
