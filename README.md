@@ -13,9 +13,8 @@
   </tr>
 </table>
 
-<span style="font-size:smaller;">
-**As illustrated in the figure, within TVDRNet, the parameters of the rendering camera undergo iterative optimization through the backpropagation of the loss gradient. This enables data-driven, adaptive convergence towards the optimal observation viewpoint.**
-</span>
+**As illustrated in the figure, within TVDRNet, the parameters of the rendering camera undergo iterative optimization through the backpropagation of the loss gradient. This enables data-driven, adaptive convergence towards the optimal observation viewpoint**
+
 ---
 
 ## 📖 What is TVDRNet?
@@ -49,7 +48,7 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 **Status**: coming soon
 
 
-
+---
 
 
 
@@ -122,7 +121,7 @@ Or use the requirements file:
 pip install -r requirements.txt
 ```
 
-
+---
 
 ## 🚀 Quick Start
 
