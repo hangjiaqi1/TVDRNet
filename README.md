@@ -49,7 +49,7 @@ The TVDRNet employs textual instructions as a supervisory signal, utilizing a di
 
 
 
-### 🎯 Phase 1: Adaptive Viewpoint Position Learning Functionality
+## 🎯 Phase 1: Adaptive Viewpoint Position Learning Functionality
 
 **Rendering Camera Parameter Optimization** - The key of Adaptive Viewpoint Position Learning (AVPL) enables automatic adjustment of camera parameters:
 
