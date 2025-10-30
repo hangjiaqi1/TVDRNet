@@ -112,13 +112,13 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 #### Step 4: Install Additional Dependencies
 
 ```bash
-pip install numpy matplotlib imageio scikit-image tqdm plyfile
+pip install numpy matplotlib imageio scikit-image tqdm plyfile --no-deps
 ```
 
 Or use the requirements file:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt --no-deps
 ```
 
 ---
